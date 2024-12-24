@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  legacy-soap:
+    container_name: legacy-soap
+    hostname: legacy-soap
+    tty: true
+    privileged: true
+    build:
+      context: .devcontainer/docker
+      dockerfile: dockerfile
+    volumes:
+      - .:/app:cached
+    restart: "no"
+

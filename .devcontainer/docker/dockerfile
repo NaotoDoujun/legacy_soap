@@ -1,0 +1,8 @@
+FROM openjdk:8-jdk
+
+# dirs
+ARG WORK_DIR
+
+RUN apt-get update && apt-get install -y wget zip unzip vim git curl && apt-get clean all
+
+ENTRYPOINT ["/bin/sh"]
