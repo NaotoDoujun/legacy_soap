@@ -10,3 +10,9 @@ legacy soap service on VS Code DevContainer
 ```
 ./mvnw spring-boot:run
 ```
+
+## SOAP UI
+
+![WSDL](/img/img1.png)
+
+![Req and Res](/img/img2.png)
